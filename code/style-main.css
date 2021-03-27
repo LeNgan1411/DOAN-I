@@ -10,6 +10,21 @@ html {
 body {
     background-color: #eee;
 }
+.label {
+    background-color: #1e2022;
+    height: 50px;
+}
+.label .username{
+    display: flex;
+    float: right;
+    color: white;
+}
+.label .username .text{
+   
+}
+.label .username i{
+  
+}
 
 header {
     background-color: #eee;
@@ -145,7 +160,7 @@ main .slider img {
 main .login{
 
 }
-main .login a{
+main .login .bt_login{
     text-decoration: none;
     color: #0d335d;
     font-size: 20px;
@@ -163,10 +178,114 @@ main .login a{
     align-items: center;
     justify-content: center;
     display: flex;
+    border: none;
+    outline: none;
 }
-main .login a:hover{
+main .login .bt_login:hover{
     color: white;
     background-color: #ec4646;
+}
+main .login-menu {
+    display: block;
+    background-color: #ab272d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, -30%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    width: 280px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+main .login-menu .text {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+main .login-menu .confirm button {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 80px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 7px;
+    margin-left: 3px;
+    outline: none;
+}
+
+main .login-menu .confirm button:hover {
+    color: #ab272d;
+    background-color: white;
+}
+
+main .login-menu input {
+    margin-bottom: 20px;
+    color: gray;
+    border-radius: 10px;
+    border: none;
+    height: 34px;
+    padding-left: 7px;
+    width: 210px;
+    outline: none;
+}
+main .login-fail .text {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+main .login-fail .confirm a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 80px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 7px;
+    margin-left: 3px;
+}
+
+main .login-fail .confirm a:hover {
+    color: #ab272d;
+    background-color: white;
+}
+main .login-fail {
+    display: block;
+    background-color: #ab272d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, -30%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    width: 280px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    padding-top: 10px;
+}
+main .login-fail .warning{
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    
+}
+main .login-fail .warning .text{
+    font-size: 15px;
+}
+main .login-fail .warning i{
+    color: #ab272d;
 }
 footer {
     background-color: #0d335d;
