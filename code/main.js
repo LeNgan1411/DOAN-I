@@ -1,4 +1,20 @@
 
+var header = document.getElementById("head");
+
+var header_height = header.offsetHeight ;
+var footer = document.getElementById("fo");
+
+var footer_height = footer.offsetHeight ;
+
+var x = window.innerHeight - header_height - footer_height;
+console.log(x);
+
+var main = document.getElementById("m");
+
+var main_height = main.offsetHeight ;
+if (main_height <= x ) {
+    document.getElementById("m").style.minHeight = x;
+}
 
 $(document).ready(function () {
     $(".login button").click(function () { 
@@ -76,5 +92,22 @@ $(document).ready(function () {
         // console.log("đã click")
         $(".login-fail").addClass("d-none");
         $(".login-menu input").val("");
-    });
+    });d
 });
+
+var header = document.getElementById("head");
+
+var header_height = header.offsetHeight ;
+var footer = document.getElementById("fo");
+
+var footer_height = footer.offsetHeight ;
+
+var x = window.innerHeight - header_height - footer_height;
+console.log(x);
+
+var main = document.getElementById("m");
+
+var main_height = main.offsetHeight ;
+if (main_height <= x ) {
+    document.getElementById("m").style.minHeight = x;
+}
