@@ -10,21 +10,21 @@ html {
 body {
     background-color: #eee;
 }
+
 .label {
     background-color: #1e2022;
     height: 50px;
 }
-.label .username{
+
+.label .username {
     display: flex;
     float: right;
     color: white;
 }
-.label .username .text{
-   
-}
-.label .username i{
-  
-}
+
+.label .username .text {}
+
+.label .username i {}
 
 header {
     background-color: #eee;
@@ -157,34 +157,47 @@ main .slider img {
     width: 100%;
 }
 
-main .login{
-
-}
-main .login .bt_login{
-    text-decoration: none;
-    color: #0d335d;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
+main .login {
     background-color: #eee;
-    height: 60px;
-    width: 160px;
-    border-radius: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     z-index: 100;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -30%);
     align-items: center;
     justify-content: center;
-    display: flex;
-    border: none;
+    text-align: center;
+    height: 230px;
+    width: 280px;
+    border-radius: 25px;
+    color: #0d335d;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+main .login .text {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+main .login button {
+    text-decoration: none;
+    color: #eee;
+    margin-left: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 7px;
     outline: none;
+    background-color: #0d335d;
+    margin-bottom: 16px;
+    width: 240px;
 }
-main .login .bt_login:hover{
-    color: white;
-    background-color: #ec4646;
+
+main .login button:hover {
+    color: #1e2022;
+    background-color: white;
 }
+
 main .login-menu {
     display: block;
     background-color: #ab272d;
@@ -219,6 +232,7 @@ main .login-menu .confirm button {
     padding: 5px 7px;
     margin-left: 3px;
     outline: none;
+    background-color: #ab272d;
 }
 
 main .login-menu .confirm button:hover {
@@ -236,6 +250,7 @@ main .login-menu input {
     width: 210px;
     outline: none;
 }
+
 main .login-fail .text {
     font-size: 20px;
     padding-bottom: 10px;
@@ -252,10 +267,7 @@ main .login-fail .confirm a {
     margin-left: 3px;
 }
 
-main .login-fail .confirm a:hover {
-    color: #ab272d;
-    background-color: white;
-}
+
 main .login-fail {
     display: block;
     background-color: #ab272d;
@@ -273,20 +285,35 @@ main .login-fail {
     color: white;
     font-weight: 600;
     padding-top: 10px;
+    cursor: pointer;
 }
-main .login-fail .warning{
+
+main .login-fail .cancel {
+    font-size: 21px;
+    float: right;
+    padding-right: 5px;
+    margin-top: -7px;
+
+}
+
+main .login-fail .warning {
     background-color: white;
     color: black;
     margin-bottom: 20px;
     padding-left: 5px;
-    
+    height: 100px;
+
 }
-main .login-fail .warning .text{
+
+main .login-fail .warning .text {
     font-size: 15px;
 }
-main .login-fail .warning i{
+
+main .login-fail .warning i {
     color: #ab272d;
+    padding-top: 14px;
 }
+
 footer {
     background-color: #0d335d;
     height: 80px;
@@ -297,8 +324,7 @@ footer {
 
 footer .text-address {}
 
-footer .copy-right{
+footer .copy-right {
     float: right;
     margin-top: 7px;
 }
-
