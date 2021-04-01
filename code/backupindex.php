@@ -16,7 +16,18 @@
 </head>
 
 <body>
-    <header id="head">
+    <div class="label d-none">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8"></div>
+                <div class="col-md-4 ">
+                    <div class="username"><div class="text">Lê Thị Ngân</div>
+                    <i class="fas fa-user-circle"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-md-8 header-info">
@@ -58,7 +69,7 @@
                 <div class="col-lg-6">
                     <div class="link-nav-main">
                         <ul>
-                            <li><a href="">Trang chủ</a></li>
+                            <li><a href="/trangchu">Trang chủ</a></li>
                             <li><a href="">Giảng viên</a></li>
                             <li><a href="">Sinh viên</a></li>
                         </ul>
@@ -67,7 +78,7 @@
             </div>
         </div>
     </nav>
-    <main minheight = 400px>
+    <main>
         <div class="slider ">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -89,41 +100,39 @@
 
             </div>
         </div>
-        <div class="login ">
-            <div class="text">Đăng nhập</div>
-           <!--  <button class="std">Dành cho sinh viên</button>
-            <button class="tea">Dành cho giảng viên</button>
-            <button class="man">Dành cho quản trị viên</button> -->
-            <button class="std">Đăng nhập</button>
+        <div class="login d-block">
+            <button class="bt_login">Đăng nhập </button>
         </div>
-
-
         <div class="login-menu d-none">
-               <form action="login.php" method="post">
-                  <h2>ĐĂNG NHẬP</h2>
-                  <?php if (isset($_GET['error'])) { ?>
-                   <p class="error"><?php echo $_GET['error']; ?></p>
-               <?php } ?>
-               <input type="text" name="uname" placeholder="Tài khoản"><br>
-               <input type="password" name="password" placeholder="Mật khẩu"><br>
-               <button type="submit">Đăng nhập</button>
-           </form>
-            </div>
+            <div class="text">Quản lý Đồ Án</div>
+            <!-- <input type="text" id="user" placeholder="username">
+            <input type="password" id="pass" placeholder="password">
+            <div class="confirm">
+               <button href="">đăng nhập</button> 
+            </div> -->
+            
+            <form action="login.php" method="post"> 
+              <h2>ĐĂNG NHẬP</h2>
+              <?php if (isset($_GET['error'])) { ?>
+                 <p class="error"><?php echo $_GET['error']; ?></p>
+             <?php } ?>
+             <input type="text" name="uname" placeholder="Tài khoản"><br>
+             <input type="password" name="password" placeholder="Mật khẩu"><br>
+             <button type="submit">Đăng nhập</button>
+            
         </div>
+            
 
         <div class="login-fail d-none ">
-            <div class="cancel"><i class="far fa-times-circle"></i></div>
             <div class="text">Quản lý Đồ Án</div>
             <div class="warning">
                 <div class="triangle"><i class="fas fa-exclamation-triangle"></i></div>
                 <span>Tài khoản hoặc mật khẩu bị sai </span> 
                    <p>Vui lòng đăng nhập lại !</p>  
         </div>
-
-
-
+        </form>
     </main>
-    <footer id="fo">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-address">
