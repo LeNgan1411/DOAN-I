@@ -15,7 +15,10 @@ var main = document.getElementById("m");
 var main_height = main.offsetHeight ;
 console.log(main_height);
 if (main_height < x ) {
-    document.getElementById("m").style.minHeight  = x +'px';
+    document.getElementById("car").style.minHeight  =  x +'px' ;
+    document.getElementById("car1").style.minHeight  = x +'px';
+    document.getElementById("car2").style.minHeight  = x +'px';
+   
 } 
 
 $(document).ready(function () {
