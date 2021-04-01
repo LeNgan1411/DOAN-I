@@ -1,20 +1,22 @@
 
 var header = document.getElementById("head");
-
 var header_height = header.offsetHeight ;
+console.log(header_height);
+var nav = document.getElementById("na");
+var nav_height = header.offsetHeight ;
+console.log(nav_height);
 var footer = document.getElementById("fo");
-
 var footer_height = footer.offsetHeight ;
-
-var x = window.innerHeight - header_height - footer_height;
+console.log(footer_height);
+console.log(window.innerHeight);
+var x = window.innerHeight - header_height - footer_height -nav_height ;
 console.log(x);
-
 var main = document.getElementById("m");
-
 var main_height = main.offsetHeight ;
-if (main_height <= x ) {
-    document.getElementById("m").style.minHeight = x;
-}
+console.log(main_height);
+if (main_height < x ) {
+    document.getElementById("m").style.minHeight  = x +'px';
+} 
 
 $(document).ready(function () {
     $(".login button").click(function () { 
@@ -92,22 +94,22 @@ $(document).ready(function () {
         // console.log("đã click")
         $(".login-fail").addClass("d-none");
         $(".login-menu input").val("");
-    });d
+    });
 });
 
-var header = document.getElementById("head");
+// var header = document.getElementById("head");
 
-var header_height = header.offsetHeight ;
-var footer = document.getElementById("fo");
+// var header_height = header.offsetHeight ;
+// var footer = document.getElementById("fo");
 
-var footer_height = footer.offsetHeight ;
+// var footer_height = footer.offsetHeight ;
 
-var x = window.innerHeight - header_height - footer_height;
-console.log(x);
+// var x = window.innerHeight - header_height - footer_height;
+// console.log(x);
 
-var main = document.getElementById("m");
+// var main = document.getElementById("m");
 
-var main_height = main.offsetHeight ;
-if (main_height <= x ) {
-    document.getElementById("m").style.minHeight = x;
-}
+// var main_height = main.offsetHeight ;
+// if (main_height <= x ) {
+//     document.getElementById("m").style.minHeight = x;
+// }
