@@ -10,31 +10,31 @@ html {
 body {
     background-color: #eee;
 }
+
 .label {
     background-color: #1e2022;
     height: 50px;
 }
-.label .username{
+
+.label .username {
     display: flex;
     float: right;
     color: white;
 }
-.label .username .text{
-   
-}
-.label .username i{
-  
-}
+
+.label .username .text {}
+
+.label .username i {}
 
 header {
     background-color: #eee;
     height: 100px;
     align-items: center;
     display: flex;
-    position: sticky;
+    /* position: sticky;
     top: 0;
     left: 0;
-    z-index: 101;
+    z-index: 101; */
 }
 
 header .header-info {}
@@ -111,7 +111,7 @@ nav {
     align-items: center;
     position: sticky;
     left: 0;
-    top: 100px;
+    top: 0;
     z-index: 101;
 }
 
@@ -143,22 +143,27 @@ nav .link-nav-main ul li a {
     color: #0d335d;
 
 }
- nav .user{
-     font-size: 35px;
-     color: #eee;
-     padding-top:15px ;
-     position: relative;
- }
- nav .user a{
-     color: #eee;
- }
- nav .user i{
+
+nav .user {
+    font-size: 35px;
+    color: #eee;
+    padding-top: 15px;
+    position: relative;
+}
+
+nav .user a {
+    color: #eee;
+}
+
+nav .user i {
     float: right;
- }
- nav .user i{
+}
+
+nav .user i {
     float: right;
- }
- nav .user-info{
+}
+
+nav .user-info {
     position: absolute;
     font-size: 15px;
     background-color: #eee;
@@ -168,51 +173,175 @@ nav .link-nav-main ul li a {
     right: 3%;
     visibility: hidden;
     opacity: 0;
- } 
+}
 
-.nn{
+.nn {
     visibility: visible !important;
-    opacity: 1  !important;
+    opacity: 1 !important;
     z-index: 2 !important;
 }
- nav .user-info .name-user{
+
+nav .user-info .name-user {
     display: flex;
- }
- nav .user i{
-     cursor: pointer;
- }
- nav .user-info .name-user .left{
+}
+
+nav .user i {
+    cursor: pointer;
+}
+
+nav .user-info .name-user .left {
     font-size: 26px;
     padding-top: 9px;
     padding-left: 8px;
- }
- nav .user-info .name-user .right{
+}
+
+nav .user-info .name-user .right {
     font-size: 13px;
     padding-left: 5px;
- }
- nav .user-info .name-user .right span{
+}
+
+nav .user-info .name-user .right span {
     font-size: 13px;
     color: #0d335d;
     font-weight: 500;
- }
- nav .user-info .name-user .right br{
+}
+
+nav .user-info .name-user .right br {
     font-size: 10px;
     margin-top: 2px;
- }
- nav .user-info ul{
+}
+
+nav .user-info ul {
     list-style: none;
     padding-top: 6px;
 }
- nav .user-info ul li{
+
+nav .user-info ul li {
     padding-left: 15px;
     padding-top: 3px;
 }
- nav .user-info ul li a{
-   text-decoration: none;
-   color: #0d335d;
-   font-weight: 500;
+
+nav .user-info ul li a {
+    text-decoration: none;
+    color: #0d335d;
+    font-weight: 500;
 }
- nav .user-info ul li a:hover{
-   color: black;
+
+nav .user-info ul li a:hover {
+    color: black;
 }
- 
+
+main .banner-page {}
+
+main .banner-page .left {}
+
+main .banner-page .left ul {
+    list-style: none;
+    position: relative;
+}
+
+main .banner-page .left ul li {
+    border-bottom: solid 1px #0d335d;
+    color: #0d335d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main .banner-page .left ul li a {
+    text-decoration: none;
+    color: #0d335d;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    width: 100%;
+}
+
+main .banner-page .left ul li a::after {
+    content: "\f101";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    color: #0d335d;
+    float: right;
+}
+
+main .banner-page .left ul li a:hover {
+    background: #D8D8D8;
+}
+
+main .banner-page .right {
+    margin-left: -30px;
+}
+
+main .banner-page .right img {
+    height: 100%;
+    width: 104%;
+}
+
+main .list-manager li.time-table .list-active{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background:  #00000066;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    height: 280%;
+    z-index: 10;
+    width: 337%;
+    transition: 0.4s; 
+    flex-wrap: wrap;
+    overflow-y: auto;
+
+}
+main ul.list-manager li.time-table:hover .list-active{
+    opacity: 1;
+    visibility: visible;
+    
+}
+main .list-active table{
+    border: solid 5px white ;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: center;
+    width: 700px;
+    border-collapse: collapse;
+    
+}
+main .list-active td , th{
+    border: solid 1px white ;
+    padding: 10px;
+}
+main .list-active table {
+    
+}
+main .list-active table tr.last{
+    border-bottom:solid 5px white ;
+}
+main .list-active button{
+    background-color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    outline: none;
+    color: #0d335d;
+    font-weight: 500;
+    float: right;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+footer {
+    background-color: #0d335d;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+footer .text-address {}
+
+footer .copy-right {
+    float: right;
+    margin-top: 7px;
+}
