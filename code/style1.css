@@ -10,21 +10,21 @@ html {
 body {
     background-color: #eee;
 }
-
 .label {
     background-color: #1e2022;
     height: 50px;
 }
-
-.label .username {
+.label .username{
     display: flex;
     float: right;
     color: white;
 }
-
-.label .username .text {}
-
-.label .username i {}
+.label .username .text{
+   
+}
+.label .username i{
+  
+}
 
 header {
     background-color: #eee;
@@ -143,111 +143,62 @@ nav .link-nav-main ul li a {
     color: #0d335d;
 
 }
-
-main {
-    background-color: #eee;
-    position: relative;
-}
-
-main .slider {
-    /* position: relative; */
-}
-
-main .slider img {
-    height:400px;
-    width: 100%;
-}
-main .login .bt_login{
-    text-decoration: none;
-    color: #0d335d;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    background-color: #eee;
-    height: 60px;
-    width: 160px;
-    border-radius: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 100;
-    transform: translate(-50%,-50%);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    border: none;
-    outline: none;
-}
-main .login .bt_login:hover{
-    color: white;
-    background-color: #ec4646;
-}
-main .login-menu {
-    display: block;
-    background-color: #ab272d;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 100;
-    transform: translate(-50%, -30%);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 200px;
-    width: 280px;
-    border-radius: 25px;
-    color: white;
-    font-weight: 600;
-    padding-top: 10px;
-}
-
-main .login-menu .text {
-    font-size: 20px;
-    padding-bottom: 10px;
-}
-
-main .login-menu .confirm button {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    margin-left: 80px;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 5px 7px;
-    margin-left: 3px;
-    outline: none;
-    background-color: #ab272d;
-}
-
-main .login-menu .confirm button:hover {
-    color: #ab272d;
-    background-color: white;
-}
-
-main .login-menu input {
-    margin-bottom: 20px;
-    color: gray;
-    border-radius: 10px;
-    border: none;
-    height: 34px;
-    padding-left: 7px;
-    width: 210px;
-    outline: none;
-}
-
-
-
-footer {
-    background-color: #0d335d;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
-footer .text-address {}
-
-footer .copy-right {
+ nav .user{
+     font-size: 35px;
+     color: #eee;
+     padding-top:15px ;
+     position: relative;
+ }
+ nav .user i{
     float: right;
-    margin-top: 7px;
+ }
+ nav .user i{
+    float: right;
+ }
+ nav .user-info{
+    position: absolute;
+    font-size: 15px;
+    background-color: #eee;
+    color: black;
+    border-radius: 17px;
+    top: 73%;
+    right: 3%;
+ }
+ nav .user-info .name-user{
+    display: flex;
+ }
+ nav .user-info .name-user .left{
+    font-size: 26px;
+    padding-top: 9px;
+    padding-left: 8px;
+ }
+ nav .user-info .name-user .right{
+    font-size: 13px;
+    padding-left: 5px;
+ }
+ nav .user-info .name-user .right span{
+    font-size: 13px;
+    color: #0d335d;
+    font-weight: 500;
+ }
+ nav .user-info .name-user .right br{
+    font-size: 10px;
+    margin-top: 2px;
+ }
+ nav .user-info ul{
+    list-style: none;
+    padding-top: 6px;
 }
+ nav .user-info ul li{
+    padding-left: 15px;
+    padding-top: 3px;
+}
+ nav .user-info ul li a{
+   text-decoration: none;
+   color: #0d335d;
+   font-weight: 500;
+}
+ nav .user-info ul li a:hover{
+   color: black;
+}
+ 
