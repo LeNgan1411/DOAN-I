@@ -67,13 +67,13 @@
                     <i class="fas fa-user-circle"></i>
                     <div class="user-info  ">
                         <div class="name-user">
-                           <div class="left"><i class="fas fa-user-circle"></i></div> 
+                            <div class="left"><i class="fas fa-user-circle"></i></div>
                             <div class="right">
                                 <span>Lê Thị Ngân</span>
                                 <br>ngan.lt182704@sis.hust.edu.vn</br>
                             </div>
                         </div>
-                        <ul>                        
+                        <ul>
                             <li><a href="">Thông tin cá nhân</a></li>
                             <li><a href="">Đổi mật khẩu </a></li>
                             <li><a href="">Đăng xuất</a></li>
@@ -90,48 +90,71 @@
                     <div class="col-lg-3 left">
                         <ul class="list-manager">
                             <li class="manager-item time-table">
-                                <a href="">Kế hoạch hoạt động</a>  
+                                <a href="">Kế hoạch hoạt động</a>
                                 <div class="list-active">
-                                    <table>
-                                    <tr>
-                                      <th>STT</th>
-                                      <th>Tên hoạt động</th>
-                                      <th>Thời gian</th>
-                                    </tr>
-                                    <tr>
-                                      <td>1</td>
-                                      <td>Mở đăng ký cho giáo viên</td>
-                                      <td>20/5/2020 - 30/5/2020</td>
-                                    </tr>
-                                    <tr>
-                                      <td>2</td>
-                                      <td>Mở đăng ký cho sinh viên</td>
-                                      <td>20/5/2020 - 30/5/2020</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Xếp lớp</td>
-                                        <td>20/5/2020 - 30/5/2020</td>
-                                      </tr>
-                                      <tr>
-                                    <tr class="last"> 
-                                      <td>4</td>
-                                      <td>Thời gian làm đồ án</td>
-                                      <td>20/5/2020 - 30/5/2020</td>
-                                    </tr>
-                                    <tr>
-                                    </table>
-                                    <button>Sửa</button>
-                                </div>                                                   
+                                    <div class="tb ">
+                                        <table>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Tên hoạt động</th>
+                                                <th>Thời gian bắt đầu</th>
+                                                <th>Thời gian kết thúc</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Mở đăng ký cho giáo viên</td>
+                                                <td>20/5/2020 </td>
+                                                <td>20/5/2020 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Mở đăng ký cho sinh viên</td>
+                                                <td>20/5/2020 </td>
+                                                <td>20/5/2020 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Xếp lớp đồ án</td>
+                                                <td>20/5/2020 </td>
+                                                <td>20/5/2020 </td>
+                                            </tr>
+                                            <tr>
+                                            <tr class="last">
+                                                <td>4</td>
+                                                <td>Thời gian làm đồ án</td>
+                                                <td>20/5/2020 </td>
+                                                <td>20/5/2020 </td>
+                                            </tr>
+                                            <tr>
+                                        </table>
+                                    </div>
+                                    <div class="mo "><button>Sửa</button></div>
+                                    <div class="update-tb d-none">
+                                        <div class="x"><i class="fas fa-window-close"></i></div>
+                                        <form action="/action_page.php">
+
+                                            Số thứ tự hoạt động: <input type="number" id="stt" name="stt" value=""><br>
+
+                                            Tên hoạt động: <input type="text" id="name" name="name" value=""><br>
+
+                                            Thời gian bắt đầu: <input type="date" id="date-s" name="date-s"
+                                                value=""><br>
+
+                                            Thời gian kết thúc: <input type="date" id="date-e" name="date-e"
+                                                value=""><br>
+                                            <input type="submit" class="s" value="Submit">
+                                        </form>
+                                    </div>
+                                </div>
                             </li>
                             <li class="manager-item">
-                                <a href="">Quản lý giáo viên</a>                             
+                                <a href="">Quản lý giáo viên</a>
                             </li>
                             <li class="manager-item">
-                                <a href="">Quản lý sinh viên</a>                              
+                                <a href="">Quản lý sinh viên</a>
                             </li>
                             <li class="manager-item">
-                                <a href="">Quản lý đồ án</a>                               
+                                <a href="">Quản lý đồ án</a>
                             </li>
 
                         </ul>
@@ -155,21 +178,21 @@
             </div>
         </div>
     </footer>
-    
 
-        <!-- Optional JavaScript -->
+
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
-<script src="./giaovu.js">
-</script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="./giaovu.js">
+    </script>
 </body>
 
 </html>

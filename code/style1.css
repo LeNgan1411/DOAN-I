@@ -331,6 +331,29 @@ main .list-active button{
     margin-right: 100px;
     margin-top: 10px;
 }
+main .list-active .update-tb .x{
+    color: white;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 9px;
+}
+main .list-active .update-tb{
+    margin-left: 25%;
+    width: 50%;
+   
+}
+main .list-active .update-tb form{
+
+}
+
+main .list-active .update-tb form input{
+    margin-top: 6%;
+    outline: none;
+}
+main .list-active .update-tb form input.s{
+    margin-left: 33%;
+}
 footer {
     background-color: #0d335d;
     height: 80px;
