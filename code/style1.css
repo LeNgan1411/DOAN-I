@@ -353,6 +353,11 @@ main .list-active .update-tb form input{
 }
 main .list-active .update-tb form input.s{
     margin-left: 33%;
+    width: 50px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: 18px;
 }
 footer {
     background-color: #0d335d;
