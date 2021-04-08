@@ -279,7 +279,7 @@ main .banner-page .right img {
     width: 104%;
 }
 
-main .list-manager li.time-table .list-active{
+main .list-manager li .list-active{
     position: absolute;
     top: 0;
     left: 100%;
@@ -295,19 +295,25 @@ main .list-manager li.time-table .list-active{
     overflow-y: auto;
 
 }
-main ul.list-manager li.time-table:hover .list-active{
+main ul.list-manager li:hover .list-active{
     opacity: 1;
     visibility: visible;
     
 }
 main .list-active table{
     border: solid 5px white ;
-    margin-top: 20px;
+    margin-top: 3px;
     margin-left: 50px;
     text-align: center;
-    width: 700px;
+    width: 760px;
     border-collapse: collapse;
+    font-size: 15px;
     
+}
+main li.time-table .list-active table{
+    font-size: 18px !important;
+    width: 700px !important;
+    margin-top: 20px !important;
 }
 main .list-active td , th{
     border: solid 1px white ;
@@ -319,7 +325,7 @@ main .list-active table {
 main .list-active table tr.last{
     border-bottom:solid 5px white ;
 }
-main .list-active button{
+main li.time-table .list-active button{
     background-color: white;
     border: none;
     padding: 8px 20px;
@@ -358,6 +364,32 @@ main .list-active .update-tb form input.s{
     outline: none;
     border: none;
     font-size: 18px;
+}
+main li.teacher .list-active .btu{
+    display: flex;
+    margin-left: 50px
+}
+main li.teacher .list-active button{
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    outline: none;
+    color: #0d335d;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+main li.teacher .list-active table.gv{
+        counter-reset: serial-number;  /* Set the serial number counter to 0 */
+}
+main li.teacher .list-active table.gv td:first-child:before{
+    counter-increment: serial-number;  /* Increment the serial number counter */
+    content: counter(serial-number);  /* Display the counter */
+}
+main li.teacher .list-active .del h5{
+    margin-top: 40px;
+    color: antiquewhite;
 }
 footer {
     background-color: #0d335d;
