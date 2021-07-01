@@ -1,0 +1,11 @@
+body{
+    color: aliceblue;
+}
+a{  
+    border: 1px solid white;
+    color: aliceblue;
+    text-decoration: none   ;
+}
+table{
+    border: 1px solid white;
+}

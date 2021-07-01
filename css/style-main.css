@@ -11,6 +11,21 @@ body {
     background-color: #eee;
 }
 
+.label {
+    background-color: #1e2022;
+    height: 50px;
+}
+
+.label .username {
+    display: flex;
+    float: right;
+    color: white;
+}
+
+.label .username .text {}
+
+.label .username i {}
+
 header {
     background-color: #eee;
     height: 100px;
@@ -131,21 +146,18 @@ nav .link-nav-main ul li a {
 
 main {
     background-color: #eee;
-}
-
-main .slider {
     position: relative;
 }
 
+main .slider {
+    
+}
+
 main .slider img {
-    height: 400px;
+    height:400px;
     width: 100%;
 }
-
-main .login{
-
-}
-main .login a{
+main .login .bt_login{
     text-decoration: none;
     color: #0d335d;
     font-size: 20px;
@@ -163,11 +175,15 @@ main .login a{
     align-items: center;
     justify-content: center;
     display: flex;
+    border: none;
+    outline: none;
 }
-main .login a:hover{
+main .login .bt_login:hover{
     color: white;
     background-color: #ec4646;
+    text-decoration: none;
 }
+
 footer {
     background-color: #0d335d;
     height: 80px;
@@ -178,8 +194,10 @@ footer {
 
 footer .text-address {}
 
-footer .copy-right{
+footer .copy-right {
     float: right;
     margin-top: 7px;
+}   
+a{
+    text-decoration: none;
 }
-

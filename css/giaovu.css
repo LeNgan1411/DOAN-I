@@ -1,0 +1,781 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+.label {
+    background-color: #1e2022;
+    height: 50px;
+}
+
+.label .username {
+    display: flex;
+    float: right;
+    color: white;
+}
+
+.label .username .text {}
+
+.label .username i {}
+
+header {
+    background-color: #eee;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    /* position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 101; */
+}
+
+header .header-info {}
+
+header .header-info a.logo-set {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .header-info a.logo-set .logo-img {
+    margin-right: 15px;
+}
+
+header .header-info a.logo-set .logo-img img {
+    height: 80px;
+    width: 73px;
+}
+
+header .header-info a.logo-set .logo-text {
+
+    font-weight: 700;
+}
+
+header .header-info a.logo-set .logo-text span {
+    color: red;
+    font-size: 25px;
+}
+
+header .header-info a.logo-set .logo-text i {
+    color: #0d335d;
+    font-size: 20px;
+}
+
+header .header-info a.logo-set .line {
+    width: 200px;
+    background-color: #0d335d;
+    height: 1.5px;
+    margin-top: -17px;
+    margin-left: 34px;
+}
+
+.header-social {}
+
+.header-social ul {
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
+.header-social ul li {}
+
+.header-social ul li a {
+    margin-left: 5px;
+    border-radius: 5px;
+    transition: all 0.4s;
+    display: block !important;
+}
+
+.header-social ul li a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 1px 4px 0px rgb(84 84 84);
+}
+
+.header-social ul li a img {
+    height: 40px;
+    width: 40px;
+}
+
+nav {
+    background-color: #0d335d;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 101;
+}
+
+nav .link-nav-main {
+    margin-top: 14px;
+}
+
+nav .link-nav-main ul {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+nav .link-nav-main ul li {
+    padding-right: 30px;
+}
+
+nav .link-nav-main ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 4px 15px;
+}
+
+.link-nav-main ul li a:hover {
+    border-radius: 90px;
+    background: white;
+    color: #0d335d;
+
+}
+
+nav .user {
+    font-size: 35px;
+    color: #eee;
+    padding-top: 15px;
+    position: relative;
+}
+
+nav .user a {
+    color: #eee;
+}
+
+nav .user i {
+    float: right;
+}
+
+nav .user i {
+    float: right;
+}
+
+nav .user-info {
+    position: absolute;
+    font-size: 15px;
+    background-color: #eee;
+    color: black;
+    border-radius: 17px;
+    top: 73%;
+    right: 3%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nn {
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 2 !important;
+}
+
+nav .user-info .name-user {
+    display: flex;
+}
+
+nav .user i {
+    cursor: pointer;
+}
+
+nav .user-info .name-user .left {
+    font-size: 26px;
+    padding-top: 9px;
+    padding-left: 8px;
+}
+
+nav .user-info .name-user .right {
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+nav .user-info .name-user .right span {
+    font-size: 13px;
+    color: #0d335d;
+    font-weight: 500;
+}
+
+nav .user-info .name-user .right br {
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+nav .user-info ul {
+    list-style: none;
+    padding-top: 6px;
+}
+
+nav .user-info ul li {
+    padding-left: 15px;
+    padding-top: 3px;
+}
+
+nav .user-info ul li a {
+    text-decoration: none;
+    color: #0d335d;
+    font-weight: 500;
+}
+
+nav .user-info ul li a:hover {
+    color: black;
+}
+
+main .banner-page {}
+
+main .banner-page .left {}
+
+main .banner-page .left ul {
+    list-style: none;
+    position: relative;
+}
+
+main .banner-page .left ul li {
+    border-bottom: solid 1px #0d335d;
+    color: #0d335d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main .banner-page .left ul li a {
+    text-decoration: none;
+    color: #0d335d;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    width: 100%;
+}
+
+main .banner-page .left ul li a::after {
+    content: "\f101";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    color: #0d335d;
+    float: right;
+}
+
+main .banner-page .left ul li a:hover {
+    background: #D8D8D8;
+}
+
+main .banner-page .right {
+    margin-left: -30px;
+}
+
+main .banner-page .right img {
+    height: 100%;
+    width: 104%;
+}
+
+main .list-manager li.time-table .list-active{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background:  #00000066;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    height: 280%;
+    z-index: 10;
+    width: 337%;
+    transition: 0.4s; 
+    flex-wrap: wrap;
+    overflow-y: auto;
+
+}
+main ul.list-manager li.time-table:hover .list-active{
+    opacity: 1;
+    visibility: visible;
+    
+}
+main .list-active table{
+    border: solid 5px white ;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: center;
+    width: 700px;
+    border-collapse: collapse;
+    
+}
+main .list-active td , th{
+    border: solid 1px white ;
+    padding: 10px;
+}
+main .list-active table {
+    
+}
+main .list-active table tr.last{
+    border-bottom:solid 5px white ;
+}
+main .list-active button{
+    background-color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    outline: none;
+    color: #0d335d;
+    font-weight: 500;
+    float: right;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+main .list-active .update-tb .x{
+    color: white;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 9px;
+}
+main .list-active .update-tb{
+    margin-left: 25%;
+    width: 50%;
+   
+}
+main .list-active .update-tb form{
+
+}
+
+main .list-active .update-tb form input{
+    margin-top: 6%;
+    outline: none;
+}
+main .list-active .update-tb form input.s{
+    margin-left: 33%;
+    width: 50px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+footer {
+    background-color: #0d335d;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+footer .text-address {}
+
+footer .copy-right {
+    float: right;
+    margin-top: 7px;
+}   * {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+.label {
+    background-color: #1e2022;
+    height: 50px;
+}
+
+.label .username {
+    display: flex;
+    float: right;
+    color: white;
+}
+
+.label .username .text {}
+
+.label .username i {}
+
+header {
+    background-color: #eee;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    /* position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 101; */
+}
+
+header .header-info {}
+
+header .header-info a.logo-set {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .header-info a.logo-set .logo-img {
+    margin-right: 15px;
+}
+
+header .header-info a.logo-set .logo-img img {
+    height: 80px;
+    width: 73px;
+}
+
+header .header-info a.logo-set .logo-text {
+
+    font-weight: 700;
+}
+
+header .header-info a.logo-set .logo-text span {
+    color: red;
+    font-size: 25px;
+}
+
+header .header-info a.logo-set .logo-text i {
+    color: #0d335d;
+    font-size: 20px;
+}
+
+header .header-info a.logo-set .line {
+    width: 200px;
+    background-color: #0d335d;
+    height: 1.5px;
+    margin-top: -17px;
+    margin-left: 34px;
+}
+
+.header-social {}
+
+.header-social ul {
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
+.header-social ul li {}
+
+.header-social ul li a {
+    margin-left: 5px;
+    border-radius: 5px;
+    transition: all 0.4s;
+    display: block !important;
+}
+
+.header-social ul li a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 1px 4px 0px rgb(84 84 84);
+}
+
+.header-social ul li a img {
+    height: 40px;
+    width: 40px;
+}
+
+nav {
+    background-color: #0d335d;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 101;
+}
+
+nav .link-nav-main {
+    margin-top: 14px;
+}
+
+nav .link-nav-main ul {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+nav .link-nav-main ul li {
+    padding-right: 30px;
+}
+
+nav .link-nav-main ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 4px 15px;
+}
+
+.link-nav-main ul li a:hover {
+    border-radius: 90px;
+    background: white;
+    color: #0d335d;
+
+}
+
+nav .user {
+    font-size: 35px;
+    color: #eee;
+    padding-top: 15px;
+    position: relative;
+}
+
+nav .user a {
+    color: #eee;
+}
+
+nav .user i {
+    float: right;
+}
+
+nav .user i {
+    float: right;
+}
+
+nav .user-info {
+    position: absolute;
+    font-size: 15px;
+    background-color: #eee;
+    color: black;
+    border-radius: 17px;
+    top: 73%;
+    right: 3%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nn {
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 2 !important;
+}
+
+nav .user-info .name-user {
+    display: flex;
+}
+
+nav .user i {
+    cursor: pointer;
+}
+
+nav .user-info .name-user .left {
+    font-size: 26px;
+    padding-top: 9px;
+    padding-left: 8px;
+}
+
+nav .user-info .name-user .right {
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+nav .user-info .name-user .right span {
+    font-size: 13px;
+    color: #0d335d;
+    font-weight: 500;
+}
+
+nav .user-info .name-user .right br {
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+nav .user-info ul {
+    list-style: none;
+    padding-top: 6px;
+}
+
+nav .user-info ul li {
+    padding-left: 15px;
+    padding-top: 3px;
+}
+
+nav .user-info ul li a {
+    text-decoration: none;
+    color: #0d335d;
+    font-weight: 500;
+}
+
+nav .user-info ul li a:hover {
+    color: black;
+}
+
+main .banner-page {}
+
+main .banner-page .left {}
+
+main .banner-page .left ul {
+    list-style: none;
+    position: relative;
+}
+
+main .banner-page .left ul li {
+    border-bottom: solid 1px #0d335d;
+    color: #0d335d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main .banner-page .left ul li a {
+    text-decoration: none;
+    color: #0d335d;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    width: 100%;
+}
+
+main .banner-page .left ul li a::after {
+    content: "\f101";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    color: #0d335d;
+    float: right;
+}
+
+main .banner-page .left ul li a:hover {
+    background: #D8D8D8;
+}
+
+main .banner-page .right {
+    margin-left: -30px;
+}
+
+main .banner-page .right img {
+    height: 100%;
+    width: 104%;
+}
+
+main .list-manager li .list-active{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background:  #00000066;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    height: 280%;
+    z-index: 10;
+    width: 337%;
+    transition: 0.4s; 
+    flex-wrap: wrap;
+    overflow-y: auto;
+
+}
+main ul.list-manager li:hover .list-active{
+    opacity: 1;
+    visibility: visible;
+    
+}
+main .list-active table{
+    border: solid 5px white ;
+    margin-top: 3px;
+    margin-left: 50px;
+    text-align: center;
+    width: 760px;
+    border-collapse: collapse;
+    font-size: 15px;
+    
+}
+main li.time-table .list-active table{
+    font-size: 18px !important;
+    width: 700px !important;
+    margin-top: 20px !important;
+}
+main .list-active td , th{
+    border: solid 1px white ;
+    padding: 10px;
+}
+main .list-active table {
+    
+}
+main .list-active table tr.last{
+    border-bottom:solid 5px white ;
+}
+main li.time-table .list-active button{
+    background-color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    outline: none;
+    color: #0d335d;
+    font-weight: 500;
+    float: right;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+main .list-active .update-tb .x{
+    color: white;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 9px;
+}
+main .list-active .update-tb{
+    margin-left: 25%;
+    width: 50%;
+   
+}
+main .list-active .update-tb form{
+
+}
+
+main .list-active .update-tb form input{
+    margin-top: 6%;
+    outline: none;
+}
+main .list-active .update-tb form input.s{
+    margin-left: 33%;
+    width: 50px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+main li.teacher .list-active .btu{
+    display: flex;
+    margin-left: 50px
+}
+main li.teacher .list-active button{
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    outline: none;
+    color: #0d335d;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+main li.teacher .list-active table.gv{
+        counter-reset: serial-number;  /* Set the serial number counter to 0 */
+}
+main li.teacher .list-active table.gv td:first-child:before{
+    counter-increment: serial-number;  /* Increment the serial number counter */
+    content: counter(serial-number);  /* Display the counter */
+}
+main li.teacher .list-active .del h5{
+    margin-top: 40px;
+    color: antiquewhite;
+}
+footer {
+    background-color: #0d335d;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+
+footer .copy-right {
+    float: right;
+    margin-top: 7px;
+}
